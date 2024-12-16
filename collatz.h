@@ -4,13 +4,15 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-struct LFU {
+struct LFU
+{
     int key;
     int value;
     int frequency;
 };
 
-struct LRU {
+struct LRU
+{
     int key;
     int value;
     int recentlyUsed;
@@ -31,4 +33,4 @@ void cache_insert(int candidate, int value, const char *policy);
 // Free the memory allocated for the cache
 void cache_free(void);
 
-#endif // CACHE_H
+#endif // COLLATZ_H
